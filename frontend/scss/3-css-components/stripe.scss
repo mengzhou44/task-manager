@@ -1,0 +1,81 @@
+ .StripeElement {
+  display: block;
+  margin:  1rem  0 2rem 0;
+  max-width: 50rem;
+  padding: 1rem 1.4rem;
+  font-size:  $font-normal;
+  box-shadow: 0 4px 6px rgba(50, 50, 93, .11), 0 1px 3px rgba(0, 0, 0, .08);
+ 
+  border: 0;
+  outline: 0;
+  border-radius: 3px;
+  background:  $color-white;
+}
+
+.StripeElement--focus {
+  box-shadow: 0 4px 6px rgba(50, 50, 93, .11), 0 1px 3px rgba(0, 0, 0, .08);
+  -webkit-transition: all 150ms ease;
+  transition: all 150ms ease;
+}
+
+.payment-request-button {
+      position: relative; 
+      overflow: hidden;
+      height: 3.8rem;
+      width: auto;
+      margin:0;
+      max-width: auto;
+      padding: 0;
+      z-index: $z-index-lower;
+      .StripeElement {      
+        margin: 0;
+        max-width: auto;
+        padding: 0;
+        font-size: $font-normal;
+        box-shadow: none;
+        border: 0;
+        outline: 0;
+        border-radius: 0px; 
+      }
+
+      .StripeElement--focus {
+        box-shadow: none;
+        -webkit-transition: none;
+        transition: none;
+      }
+
+      &__content {
+        display: flex; 
+        justify-content: space-around;
+        padding: 0 1rem;
+        align-items: center;
+      }
+
+      img {
+         height: 2rem;
+         width: 2rem;
+         object-fit:  fill;
+      }
+
+
+      button {
+         position: absolute; 
+         left: 0;
+         right:0; 
+         bottom: 0;
+         top:0;
+         width: 100%;
+         z-index: $z-index-normal;
+         background-color: $color-white;
+         color: $color-primary-gray-dark;
+         border: 1px solid $color-primary-gray-lighter;
+
+         &:hover,
+         &:active,
+         &:focus {
+            background-color: $color-primary-gray-lighter;
+            color: $color-primary-gray-dark;
+         }
+      }
+
+ }

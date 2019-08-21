@@ -1,0 +1,119 @@
+@import "../../../scss/app";
+
+.container {
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  z-index: $z-index-higher;
+  background-color: transparent;
+}
+
+.closeIcon {
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+  border: 1px solid $color-primary-gray-light;
+  border-radius: 50%;
+  cursor: pointer;
+  img {
+    width: 2.5rem;
+    height: 2.5rem;
+    object-fit: cover;
+  }
+}
+
+.containerClosed {
+  height: $header-height;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+
+  img {
+    border-radius: 50% !important;
+    width: 3rem;
+    height: auto;
+    object-fit: contain;
+  }
+}
+
+.contentBox {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: $header-height;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: flex-end;
+}
+
+.content {
+  min-width: 40rem;
+  height: 100vh;
+  background-color: $color-primary-gray-lighter;
+  padding: 1rem;
+}
+
+.items {
+  list-style: none;
+  text-align: left;
+  padding-top: 2rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  border: 1px solid transparent;
+
+  li {
+    width: 100%;
+    transition: all 0.4s;
+    margin-bottom: 1rem;
+    font-size: $font-larger;
+
+    .btn-link {
+      font-weight: 400;
+      color: $color-primary-gray-dark;
+      text-decoration-line: none;
+      padding: 1rem;
+    }
+
+    .btn-link:hover {
+      color: $color-primary-blue;
+      background-color: $color-primary-gray-lighter;
+    }
+  }
+
+  li:hover {
+    color: $color-primary-blue;
+    font-weight: 500;
+  }
+}
+
+.signOut {
+  margin-top: 3rem;
+  font-size: $font-normal;
+  padding: 1rem;
+  width: 100%;
+}
+
+.profile {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+  img {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50% !important;
+    object-fit: contain;
+    margin-right: 1rem;
+  }
+  font-size: $font-normal;
+}
+
+@media only screen and (max-width: $screen-small) {
+  .content {
+    width: 100%;
+    min-width: 0;
+  }
+}

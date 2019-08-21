@@ -1,0 +1,12 @@
+
+a:link,
+a:visited {
+    text-decoration-line: none;
+    color: $color-facebook;
+    transition: color .2s;
+}
+
+a:active,
+a:hover {
+    color: $color-primary-gray-dark;
+}

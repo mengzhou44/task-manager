@@ -1,0 +1,34 @@
+@import "../../../scss/app";
+
+.page {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  min-height: 100vh;
+}
+
+.content {
+  flex-grow: 1;
+}
+
+.footer {
+  background-color: $color-primary-gray-lighter !important;
+  color: $color-primary-gray-dark;
+  height: 4rem;
+  width: 100%;
+  border-top: 1px solid darken($color-primary-gray-lighter, 6);
+  font-size: $font-smaller;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 1rem;
+  text-align: center;
+}
+
+@media only screen and (max-width: $screen-small) {
+  .footer {
+    font-size: $font-tiny;
+    padding: 0 0.5rem;
+    height: 2.5rem;
+  }
+}

@@ -1,0 +1,62 @@
+input[type="file"] {
+  display: none;
+}
+
+.input-field,
+.input-field--disabled {
+  position: relative;
+  margin-bottom: 2rem;
+  padding-top: 1.5rem;
+}
+
+.input-field--disabled {
+  background-color: $color-primary-gray-lighter;
+}
+
+.input,
+.input[type="text"],
+textarea {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  font-size: $font-normal;
+  font-family: inherit;
+  color: $color-primary-gray-dark;
+  background: none;
+  font-weight: 400;
+  padding: 0.5rem;
+  padding-top: 1rem;
+  display: block;
+  width: 100% !important;
+  border: none;
+  border-bottom: 1px solid $color-primary-gray-light;
+  border-radius: 0;
+  z-index: $z-index-higher;
+  outline: 0;
+}
+
+.input:focus,
+.input:not([value=""]) {
+  outline: none;
+  border-bottom: 1px solid darken($color-primary-blue, 0.2);
+}
+
+.input:focus + .input-label,
+.input:not([value=""]) + .input-label {
+  top: 0.2rem;
+  left: 0.5rem;
+  font-size: $font-tiny;
+  font-weight: 500;
+  color: darken($color-primary-blue, 0.2);
+}
+
+.input-label {
+  display: block;
+  position: absolute;
+  top: 2.5rem;
+  left: 1rem;
+  font-size: $font-normal;
+  z-index: $z-index-normal;
+  transition: all 0.2s ease;
+  pointer-events: none;
+}

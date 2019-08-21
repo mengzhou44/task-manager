@@ -1,0 +1,31 @@
+*,
+*::after,
+*::before
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    position: static; 
+    box-sizing: border-box;
+}
+
+*:focus {outline: none;}
+
+.row {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.col {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+ 

@@ -1,0 +1,32 @@
+.Collapsible__trigger {
+    display: block;
+    font-weight: 400;
+    text-decoration: none;
+    color: $color-primary-gray;
+    position: relative;
+    padding: 1rem;
+    border-radius: .5rem;
+    background-color:  $color-primary-gray-lighter;
+    cursor: pointer;
+
+    &:after {
+      content: ' ';
+      background-image: url('/images/SVG/chevron-down.svg');
+      position: absolute;
+      font-size: $font-larger;
+      right: 1rem;
+      top: .7rem;
+      display: block;
+      transition: transform 300ms;
+      background-size: 2rem;
+      height: 2rem;
+      width: 2rem;
+    }
+ 
+    &.is-open {
+      &:after {
+        transform: rotateZ(180deg);
+      }
+    }
+
+  }

@@ -1,0 +1,15 @@
+@import "../scss/app";
+
+.image-zone {
+  display: flex;
+  justify-content: center;
+  padding: 1rem 0rem;
+  align-items: center;
+
+  button {
+    flex-grow: 1;
+    background-color: $color-primary-gray-lighter;
+    color: $color-primary-gray-dark;
+    border-color: 1px solid $color-primary-gray-light;
+  }
+}

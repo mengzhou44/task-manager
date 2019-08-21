@@ -1,0 +1,9 @@
+export const SET_ITEM = "SET_ITEM";
+export const REMOVE_ITEM = "REMOVE_ITEM";
+
+
+export const SET_SIGNUP_DATA= "SET_SIGNUP_DATA";
+export const CLEAR_SIGNUP_DATA= "CLEAR_SIGNUP_DATA";
+
+export const SIGN_IN_SUCCESS  = "SIGN_IN_SUCCESS";
+export const SIGN_OUT_SUCCESS = "SIGN_OUT_SUCCESS";

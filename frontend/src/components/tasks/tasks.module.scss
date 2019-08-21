@@ -1,0 +1,32 @@
+@import "../../../styles/app";
+
+.tasks {
+  height: 100vh;
+}
+.tasks__item {
+  height: 5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+  font-size: $font-normal;
+
+  border-radius: 3px;
+  background-color: $color-primary-gray-lighter;
+}
+
+.tasks__item-completed,
+.tasks__item-completed--done {
+  cursor: pointer;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+  img {
+    margin-right: 0.5rem;
+  }
+}
+
+.tasks__item-completed--done {
+  color: $color-secondary-green;
+}

@@ -1,0 +1,13 @@
+.tooltip {
+  color: $color-primary-gray-lighter !important;
+  background-color: $color-primary-blue !important;
+
+  &.place-bottom {
+    &:before {
+      border-bottom-color: $color-primary-blue !important;
+      border-bottom-style: solid !important;
+      border-bottom-width: 0.8rem !important;
+      z-index: $z-index-higher;
+    }
+  }
+}

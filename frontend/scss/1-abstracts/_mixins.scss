@@ -1,0 +1,93 @@
+@mixin btn-brand($brand-color, $text-color) {
+  color: $text-color;
+  background-image: none !important;
+  background-color: $brand-color;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+  align-items: center;
+  font-size: $font-normal;
+
+  img {
+    width: 2rem;
+    height: 2rem;
+    margin-right: 1rem;
+  }
+
+  &:hover {
+    background-color: darken($brand-color, 5%);
+    border: none;
+  }
+}
+
+@mixin center-in-container {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+@mixin background-image($url) {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url($url);
+  background-size: cover;
+  background-position: center;
+}
+
+@mixin background {
+  background: linear-gradient(
+    to bottom right,
+    $color-primary-gray-lighter,
+    $color-primary-gray
+  );
+}
+
+@mixin white-background {
+  background: $color-primary-gray-lighter;
+}
+
+@mixin window-close {
+  position: absolute;
+  width: 3rem;
+  height: 3rem;
+  right: 3rem;
+  top: 1rem;
+  padding: 0.5rem;
+  border-radius: 50%;
+  border: 1px solid $color-primary-gray-light;
+  background-color: $color-primary-gray-lighter;
+  cursor: pointer;
+}
+
+@mixin marker-after {
+  display: block;
+  height: 0.2rem;
+  background-color: $color-primary-blue;
+  content: " ";
+  width: 10rem;
+  margin: 0 auto;
+  margin-top: 1.5rem;
+  margin-bottom: 3rem;
+}
+
+@mixin show-more {
+  width: 100%;
+  margin-top: 2rem;
+  font-size: $font-normal;
+
+  text-align: center;
+
+  button,
+  button:hover {
+    color: $color-primary-gray-dark;
+  }
+}
+
+@mixin title {
+  font-size: $font-big;
+  font-weight: 400;
+  margin-top: 0rem;
+  margin-bottom: 4rem;
+  color: $color-primary-blue;
+  text-align: center;
+}

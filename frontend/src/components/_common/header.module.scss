@@ -1,0 +1,89 @@
+@import "../../../scss/app";
+
+@mixin button($color, $backgroundColor) {
+  font-weight: 500;
+  background: none;
+  color: $color;
+  border: 1px solid $backgroundColor;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  padding-top: 0.75rem !important;
+  padding-bottom: 0.75rem !important;
+
+  &:hover {
+    color: $color;
+    border: 2px solid $backgroundColor;
+  }
+}
+
+.btn-sign-in {
+  @include button($color-black, $color-primary-gray-dark);
+  margin-right: 1rem;
+}
+
+.btn-sign-up {
+  @include button($color-white, $color-primary-blue);
+  background-color: $color-primary-blue;
+  margin-right: 0;
+}
+
+header {
+  width: 100%;
+  height: 5rem;
+
+  background-color: $color-white;
+  color: $color-black;
+  position: fixed;
+  top: 0;
+  z-index: $z-index-higher;
+  border-bottom: 1px solid $color-primary-gray-lighter;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title {
+  margin-right: 1rem;
+  padding-left: 1rem;
+
+  color: $color-primary-gray-dark;
+  font-size: $font-larger;
+  font-weight: 500;
+}
+
+.content {
+  flex: 1;
+  padding: 0.5rem;
+  padding-right: 1rem !important;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.auth {
+  display: flex;
+  justify-content: space-around;
+}
+
+@media only screen and (max-width: $screen-medium) {
+  .btn-sign-in {
+    font-size: $font-smaller;
+    padding: 0.5rem;
+  }
+}
+
+@media only screen and (max-width: $screen-small) {
+  .content {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 0rem;
+  }
+
+  .btn-sign-in {
+    margin-right: 1rem;
+    font-size: $font-smaller;
+    padding: 1rem;
+  }
+}

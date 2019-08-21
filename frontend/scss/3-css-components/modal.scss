@@ -1,0 +1,39 @@
+.modal{  
+    position:  fixed;
+    left: 0;
+    top:  0;
+    right:0;
+    bottom:0;
+    outline:0;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+    z-index: $z-index-higher;
+    background-color:  rgba(0,0,0,.5);
+}
+ 
+
+.modal__bottom { 
+    position:  fixed;
+    left: 0;
+    top:  $header-height;
+    right:0;
+    bottom: 0;
+    outline:0;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+    z-index: $z-index-normal;
+    background-color: rgba(0,0,0,.8);
+
+}
+
+
+
+@media only screen and (max-width: $screen-small) {
+    .modal {     
+        overflow-y: hidden;
+    }
+
+   .modal__bottom {     
+       overflow-y: hidden; 
+   }
+}

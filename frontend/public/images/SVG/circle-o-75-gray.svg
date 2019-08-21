@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="125px" height="125px" viewBox="0 0 125 125" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.1 (51147) - http://www.bohemiancoding.com/sketch -->
+    <title>Rectangle 49 Copy 2</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <circle id="path-1" cx="60.5" cy="60.5" r="60.5"></circle>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard-4" transform="translate(-203.000000, -546.000000)">
+            <g id="Rectangle-49-Copy-2" transform="translate(205.000000, 548.000000)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <use id="Mask" stroke="#9b9b9b" stroke-width="3" xlink:href="#path-1"></use>
+                <rect id="Rectangle-49" fill="#9b9b9b" mask="url(#mask-2)" x="-2" y="-58" width="96" height="287"></rect>
+            </g>
+        </g>
+    </g>
+</svg>

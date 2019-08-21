@@ -1,0 +1,40 @@
+@import "../../../scss/app";
+.content {
+  width: 100%;
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.field {
+  margin: 3rem 2rem;
+}
+
+.spinner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 6rem;
+  width: 100%;
+}
+
+.btn-facebook {
+  @include btn-brand($color-facebook, $color-white);
+}
+
+.btn-google {
+  @include btn-brand($color-white, $color-black);
+
+  width: 100%;
+  border: 1px solid $color-primary-gray-light;
+
+  &__content {
+    display: flex;
+    align-items: center;
+  }
+
+  &:hover {
+    border: 1px solid $color-primary-gray-light;
+    color: $color-black;
+    background-color: $color-white;
+  }
+}

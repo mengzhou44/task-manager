@@ -1,0 +1,70 @@
+@import "../../../scss/app";
+
+.sign-up-box {
+ 
+  width: 100%;
+  padding: 4rem;
+  @include background;
+}
+
+.sign-up {
+  padding: 3rem 1rem;
+  margin: 2rem auto;
+  width: 40rem;
+
+  background-color: $color-white;
+  border-radius: 3px;
+  position: relative;
+
+  &__close {
+    @include window-close;
+    background-color: $color-white;
+    border: 1px solid $color-primary-gray-light;
+    right: 1.5rem;
+    top: 0.8rem;
+  }
+
+  &__section {
+    text-align: center;
+    margin: 0 auto;
+    margin: 1rem;
+  }
+
+  &__title {
+    font-size: $font-big;
+    font-weight: 500;
+    text-align: center;
+  }
+
+  &__field {
+    margin: 2rem;
+    .btn-sign-up {
+      @include btn-brand($color-primary-blue, $color-white);
+      width: 100%;
+      justify-content: center;
+    }
+  }
+
+  &__buttons {
+    margin-top: 3rem;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+  }
+}
+
+@media only screen and (max-width: $screen-small) {
+  .sign-up-box {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .sign-up {
+    border-radius: 0;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    margin: 0 auto;
+    width: 100%;
+    flex: 1;
+  }
+}

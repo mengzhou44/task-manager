@@ -1,0 +1,118 @@
+button {
+  cursor: pointer;
+  display: inline-block;
+  padding: 0.7rem 2rem;
+  font-size: $font-normal;
+  font-weight: 300;
+  font-family: "Roboto", sans-serif;
+  text-decoration: none;
+  background-color: $color-primary-blue;
+  border-radius: 0.3rem;
+  border: none;
+  color: $color-white;
+  transition: all 0.2s;
+  position: relative;
+
+  &:hover {
+    transform: translateY(-0.3rem);
+    box-shadow: 0 1rem 2rem rgba($color-black, 0.2);
+    color: $color-white;
+  }
+
+  &:active {
+    transform: translateY(-1px);
+    box-shadow: 0 0.5rem 1rem rgba($color-black, 0.2);
+    color: $color-white;
+  }
+
+  &:focus {
+    outline: none;
+    transform: translateY(-1px);
+    box-shadow: 0 0.5rem 1rem rgba($color-black, 0.2);
+  }
+
+  &:disabled {
+    background-color: lighten($color-primary-blue, 20%);
+  }
+}
+.btn-block {
+  width: 100%;
+  margin: 0 !important;
+}
+
+input[type="submit"] {
+  display: inline-block;
+  padding: 1rem 3rem;
+  font-weight: 300;
+  text-decoration: none;
+  border-radius: 20rem;
+  transition: background-color 0.2s, border 0.2s, color 0.2s;
+}
+
+.btn-secondary {
+  background-color: $color-white;
+  border: 1px solid $color-primary-blue;
+  color: $color-primary-blue;
+
+  padding: 0.5rem 2rem;
+  &:hover {
+    color: $color-white;
+    background-color: $color-primary-blue;
+    border: 1px solid $color-primary-blue;
+    border: 1px solid transparent;
+  }
+}
+
+.btn-link {
+  border: none;
+  padding: 0;
+  margin: 0;
+  background-color: transparent;
+  box-shadow: none;
+  color: $color-primary-blue;
+  font-size: $font-normal;
+  text-decoration-line: underline;
+  transform: none;
+
+  &:hover,
+  &:active,
+  &:focus {
+    transform: none !important;
+    box-shadow: none !important;
+    color: $color-primary-blue;
+  }
+}
+
+.btn-disabled {
+  background-color: $color-primary-gray !important;
+  box-shadow: none;
+  color: $color-primary-gray-lighter !important;
+  transform: none;
+
+  &:hover,
+  &:active,
+  &:focus {
+    transform: none !important;
+    box-shadow: none !important;
+    color: $color-primary-blue;
+  }
+}
+
+.btn-gray {
+  background-color: $color-primary-gray !important;
+}
+
+@media only screen and (max-width: $screen-small) {
+  button,
+  .btn:link,
+  .btn:visited,
+  .btn:active,
+  .btn:hover,
+  input[type="submit"] {
+    font-size: $font-normal;
+    padding: 1rem 2rem;
+    font-weight: 300;
+    text-decoration: none;
+    transition: background-color 0.2s, border 0.2s, color 0.2s;
+  }
+}
