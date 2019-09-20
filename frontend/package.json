@@ -22,7 +22,7 @@
   },
   "scripts": {
     "scss": "scss --watch --sourcemap=none scss/app.scss:public/style.min.css",
-    "start": "react-scripts start",
+    "start": "PORT=4000 react-scripts start",
     "build": "react-scripts build"
   },
   "eslintConfig": {

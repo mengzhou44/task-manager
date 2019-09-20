@@ -5,6 +5,10 @@ module.exports = class TaskBl {
     this.trx = trx;
   }
 
+  async getAllTasks() {
+    return await Task.query(this.trx);
+  }
+
   async getTasks(userId) {
     return await Task.query(this.trx).where({ userId });
   }
