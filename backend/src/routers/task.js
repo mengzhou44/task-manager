@@ -31,29 +31,30 @@ router.put('/api/tasks', async (req, res) => {
 
 router.post('/api/tasks', async (req, res) => {
   tryRun(req, res, async () => {
-
     validate(
       req.body,
       Joi.object().keys({
-        userId: Joi.number().required,
-        description: Joi.string().required(),
-        completed: Joi.bool().required
+        userId: Joi.number()
+          .required(),
+        description: Joi.string()
+          .required(),
+        completed: Joi.bool()
+          .required()
       })
     );
 
     let task = {
-      ...req.body,
-      //  userId: req.user.id,
+      ...req.body
     };
-    new TaskBl().createTask(task);
-    return res.status(200).send('Task is created succssfully!');
+       new TaskBl().createTask(task);
+       return res.status(200).send('Task is created succssfully!');
   });
 });
 
-router.delete('/tasks/:id', auth, async (req, res) => {
+router.delete('/api/tasks/:id', async (req, res) => {
   tryRun(req, res, async () => {
     await new TaskBl().deleteTask(req.params.id);
-    res.status(200).send(task);
+    res.status(200).send('Task is deleted successfully!');
   });
 });
 
