@@ -1,4 +1,4 @@
-const Task = require("../data/Task");
+const Task = require('../data/Task');
 
 module.exports = class TaskBl {
   constructor(trx) {
@@ -25,8 +25,8 @@ module.exports = class TaskBl {
 
   async createTask(task) {
     return await Task.query(this.trx)
-    .allowInsert("[description, completed, userId]")
-    .insert(task);
+      .allowInsert('[description, completed, userId]')
+      .insert(task);
   }
 
   async updateTask(task) {
