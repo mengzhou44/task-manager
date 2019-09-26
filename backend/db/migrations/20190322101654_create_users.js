@@ -5,11 +5,8 @@ exports.up = function(knex, Promise) {
       table.string("first_name").notNullable();
       table.string("last_name").notNullable();
       table.string("email").notNullable();
-      table.string("password");
-      table.string("locale");
-      table.string("picture").notNullable();
       table.string("phone").notNullable();
-      table.string("tokens", 40000).defaultTo("");
+      table.string("picture").notNullable();
     })
   ]);
 };

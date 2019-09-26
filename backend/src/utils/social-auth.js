@@ -20,7 +20,6 @@ internals.getGoogleProfileByToken = async token => {
           firstName: payload.given_name,
           lastName: payload.family_name,
           picture: payload.picture,
-          locale: payload.locale
         });
       }
     });
