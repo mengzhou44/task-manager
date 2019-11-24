@@ -52,9 +52,6 @@ class UserBl {
     });
   }
 
-
- 
-
   async findByEmail(email) {
     const found = await User.query(this.trx).findOne({ email });
     if (found === undefined) {
