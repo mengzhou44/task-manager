@@ -18,7 +18,7 @@
     "redux-form": "^8.2.0",
     "redux-localstorage": "^0.4.1",
     "redux-thunk": "^2.3.0",
-    "validator": "^10.11.0"
+    "validator": "^13.7.0"
   },
   "scripts": {
     "scss": "scss --watch --sourcemap=none scss/app.scss:public/style.min.css",
